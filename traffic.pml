@@ -26,4 +26,4 @@ active proctype controller() {
 }
 
 // LTL property: never both GREEN at the same time (or cars will crash)
-ltl safe { [] !(ns_light == RED && ew_light == RED) }
+ltl safe { [] !(ns_light == GREEN && ew_light == GREEN) }

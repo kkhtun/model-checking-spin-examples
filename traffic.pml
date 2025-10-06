@@ -1,5 +1,3 @@
-// traffic.pml
-
 mtype = { RED, YELLOW, GREEN };
 
 mtype ns_light = GREEN;
@@ -27,5 +25,5 @@ active proctype controller() {
     od
 }
 
-// LTL property: never both GREEN at once
+// LTL property: never both GREEN at the same time (or cars will crash)
 ltl safe { [] !(ns_light == RED && ew_light == RED) }

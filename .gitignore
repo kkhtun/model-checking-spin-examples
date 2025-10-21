@@ -2,3 +2,5 @@ pan
 pan.*
 *.tmp
 *.trail
+*.out
+*.sel

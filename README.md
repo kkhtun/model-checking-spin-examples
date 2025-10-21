@@ -24,5 +24,5 @@ State-vector 28 byte, depth reached 27, errors: 0
 If the propety is violated, then the following command replays the error trace (using the .trail file generated during the run) to track the exact sequence leading to the error.
 
 ```
-spin -t -p -g traffic.pml
+spin -p -g -l -t traffic.pml
 ```
